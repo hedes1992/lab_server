@@ -13,7 +13,7 @@
 * memory: 64G
 * nvidia gpu: 2, GTX Titan X, 12G
 3. 624
-内部IP：见邮件，外网不可访问，亦不可访问外网（需要配置代理，见section1.5）
+内部IP：见邮件，外网不可访问，亦不可访问外网（需要配置代理，见section1.4中.bashrc设置）
 * cpu kernel: 48
 * memory: 252G
 * nvidia gpu: 4, GTX 1080 Ti, 12G
@@ -22,11 +22,12 @@
 1. 登陆软件：推荐Mobaxterm[官网的免费版下载地址](https://mobaxterm.mobatek.net/download.html)
 2. 文件下载软件：mobaxterm本身可以进行文件上传下载，这里推荐FileZilla[下载地址](https://filezilla-project.org/)
 2. 登陆命令：
-shell 内登陆： `ssh 账号@ip`
-Mobaxterm内登陆：基本用法[百度经验：mobaxterm ssh使用](https://jingyan.baidu.com/article/6dad5075223635a123e36ec9.html); 更多使用[博客：windows 全能终端](https://www.isharebest.com/mobaxterm.htm)
+* shell 内登陆： `ssh 账号@ip`
+* Mobaxterm内登陆：基本用法[百度经验：mobaxterm ssh使用](https://jingyan.baidu.com/article/6dad5075223635a123e36ec9.html)
+* 更多使用[博客：windows 全能终端](https://www.isharebest.com/mobaxterm.htm)
 3. 个人账户：
 由系统管理员分配(sudo adduser 账号名; 再在ssh配置中添加白名单)
-注意624的机器上各个账户的home目录有20G的空间限制，所以大家应该把 数据和自己的代码程序 放在 /media/账户名/ 中，然后软连接到 自己的home下,以张三为例
+注意624的机器上各个账户的home目录有20G的空间限制，所以大家应该把 数据和自己的代码程序 放在 `/media/账户名/` 中，然后软连接到 自己的home下,以张三为例
 ```
 mkdir /media/zhangsan/projects
 ln -s /media/zhangsan/projects /home/zhangsan/
