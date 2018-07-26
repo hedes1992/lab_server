@@ -30,8 +30,7 @@ Mobaxterm内登陆：基本用法[百度经验：mobaxterm ssh使用](https://ji
 由系统管理员分配(sudo adduser 账号名; 再在ssh配置中添加白名单)
 注意624的机器上各个账户的home目录有20G的空间限制，所以大家应该把 数据和自己的代码程序 放在 /media/账户名/ 中，然后软连接到 自己的home下,以张三为例
 `shell
-mkdir /media/zhangsan/projects
-
+mkdir /media/zhangsan/projects;
 ln -s /media/zhangsan/projects /home/zhangsan/
 `
 
