@@ -82,6 +82,17 @@ Git最开始是为了对Linux的内核代码进行管理. 这样庞大的项目�
     1. `git tag -a v0.1 -m 'my version 0.1'` 给自己的代码打标签
     2. `git push gitee v0.1` #将v0.1标签推送到gitee上
 ### 2.4 一些trick
+1. .gitignore 文件
+    git一般对文本文件更有效, 但也能对二进制文件做记录. 对权重等文件, 一般都不会上传到远程仓库, 一般是给出google drive的链接即可
+
+    参考[廖雪峰 .gitignore](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758404317281e54b6f5375640abbb11e67be4cd49e0000)
+    
+    我的 .gitignore 文件一般是（pt是pytorch的权重文件后缀）
+    `
+    *.zip
+    *.pyc
+    *.pt
+    `
 TODO
 ## 3. 实验室配置的git
 地址是: [wgw-1018主机](http://172.18.34.20/)
