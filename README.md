@@ -56,12 +56,12 @@ ln -s /media/zhangsan/projects /home/zhangsan/
     - 等
 * 对624用户来说，因为无法访问外网，所以需要配置 http_proxy等变量，同样参考本项目的bashrc即可
 * vim 打开，修改，保存退出后, `source ~/.bashrc` 即完成新变量的加载
-## [git 使用](./git_tutorial.md)
-## 服务器管理
+## 2. [git 使用](./git_tutorial.md)
+## 3. 服务器管理
 1. 新用户添加
 - 使用命令来添加用户 zhangsan
     管理员完成`sudo adduser zhangsan` 后续按照提示输入选好的密码
 - 将 zhangsan 加入ssh白名单,以备ssh访问
     管理员完成`sudo vim /etc/ssh/sshd_config` 在内部添加 zhangsan 即可
-### [GPU cuda 环境搭建](./python_conda.md)
-### 网络管理
+### 4. [GPU cuda 环境搭建](./gpu_conda.md)
+### 5. 网络管理
