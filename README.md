@@ -1,27 +1,6 @@
 # 620 lab server
 ## 1. 服务器使用
-### 1.1 现有服务器统计
-本实验室现有可用服务器3台
-1. P900
-内外部IP：见邮件，可以外网ssh访问
-* cpu kernel: 32
-* memory: 157G
-* nvidia gpu: 1, GTX Titan X, 12G
-2. wgw
-内外部IP：见邮件，可以外网ssh访问
-* cpu kernel: 56
-* memory: 64G
-* nvidia gpu: 2, GTX Titan X, 12G
-3. 624
-内部IP：见邮件，外网不可访问，亦不可访问外网（需要配置代理，见section1.4中.bashrc设置）
-* cpu kernel: 48
-* memory: 252G
-* nvidia gpu: 3, GTX 1080 Ti, 12G (有块卡无限送修中)
-4. rocket
-内部IP: 见邮件, 外网不可访问
-* cpu kernel: 56
-* memory: 252G
-* nvidia gpu: 8 GTX Titan Xp, 12G
+### 1.1 [现有服务器](./server_list.md)
 
 ### 1.2 如何登陆服务器
 1. 登陆软件：推荐Mobaxterm[官网的免费版下载地址](https://mobaxterm.mobatek.net/download.html)
@@ -63,5 +42,5 @@ ln -s /media/zhangsan/projects /home/zhangsan/
     管理员完成`sudo adduser zhangsan` 后续按照提示输入选好的密码
 - 将 zhangsan 加入ssh白名单,以备ssh访问
     管理员完成`sudo vim /etc/ssh/sshd_config` 在内部添加 zhangsan 即可
-### 4. [GPU cuda 环境搭建](./gpu_conda.md)
+### 4. [GPU cuda 环境搭建](./gpu_cuda.md)
 ### 5. 网络管理
